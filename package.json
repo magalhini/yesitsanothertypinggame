@@ -1,0 +1,32 @@
+{
+  "name": "yes-another-typing-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dev-server.js",
+    "dev": "webpack --config webpack.config.dev.js -w --inline --hot",
+    "test": "tape -r babel-register -r ./test/setup-jsdom.js test/*-test.js | faucet",
+    "build": "webpack --config webpack.config.prod.js --progress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "6.9.1",
+    "babel-loader": "6.2.4",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.5.0",
+    "babel-register": "6.9.0",
+    "css-loader": "^0.23.1",
+    "express": "4.13.4",
+    "react-addons-test-utils": "15.1.0",
+    "react-hot-loader": "1.3.0",
+    "style-loader": "^0.13.1",
+    "webpack": "1.13.1",
+    "webpack-dev-server": "1.14.1"
+  },
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}
