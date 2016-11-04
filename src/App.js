@@ -30,7 +30,7 @@ const initialGameOpts = {
   gameStarted: false,
   gameFinished: false,
   timer: null,
-  secondsLeft: 40,
+  secondsLeft: 50,
   coolOff: false,
   elapsedTime: 0
 };
@@ -148,7 +148,7 @@ export default class Game {
       this._game.secondsLeft -= 1;
       this._game.elapsedTime += 1;
 
-      let { secondsLeft } = this._game;
+      const { secondsLeft } = this._game;
 
       this.updateScores('time');
 
@@ -178,6 +178,9 @@ export default class Game {
 
     this._ui.wpmScore[0].innerHTML = WPM;
     this._ui.gameScore[0].innerHTML = score;
+
+    // Remove previous instances buttons, if any
+    $('#twitter-share').children().remove();
 
     twttr.widgets.createShareButton(
       'http://ricardofilipe.com/yesanothertypinggame', document.getElementById('twitter-share'), { text: tweetURL }

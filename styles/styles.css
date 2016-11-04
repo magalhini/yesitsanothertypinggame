@@ -170,7 +170,7 @@ section {
 .timeleft__description {
   float: left;
   margin-left: 1.5rem;
-  font-family: proxima-nova;
+  font-family: 'proxima-nova', sans-serif;
   width: 5rem;
   line-height: 1;
   font-size: 1.3rem;

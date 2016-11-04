@@ -3,7 +3,6 @@ export function calculateCharsTyped(words, index) {
 }
 
 export function calculateWpm(chars, time = 60) {
-  console.log('elaped time', time);
   return Math.round((chars / 5) / (time / 60));
 }
 
