@@ -3,7 +3,7 @@
 A dead simple typing game where you race against time writing a word at a time.
 You can use it to calculate your WPM (Words Per Minute) score and also to practice typing fast without making any typos, as you lose points (time) for each mistake made.
 
-You can play it here:
+You can play it here: http://boorish-instrument.surge.sh/
 
 ## Why another typing game?
 

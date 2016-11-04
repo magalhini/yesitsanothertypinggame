@@ -30,9 +30,9 @@ const initialGameOpts = {
   gameStarted: false,
   gameFinished: false,
   timer: null,
-  secondsLeft: 1,
+  secondsLeft: 40,
   coolOff: false,
-  elapsedTime: 40
+  elapsedTime: 0
 };
 
 export default class Game {
